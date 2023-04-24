@@ -9,7 +9,7 @@ pipeline{
 
             steps{
                 gitCheckout{
-                    branch: "main",
+                    name: "main",
                     url: "https://github.com/avinashkunapareddy11/mrdevops_java_app.git"
                 }
             }
