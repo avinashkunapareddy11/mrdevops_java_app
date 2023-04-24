@@ -8,10 +8,10 @@ pipeline{
         stage('Git Checkout'){
 
             steps{
-                gitCheckout{
-                    branch: "main"
-                    url: "https://github.com/avinashkunapareddy11/mrdevops_java_app.git"
-                }
+            gitCheckout{
+                branch: "main",
+                url: "https://github.com/avinashkunapareddy11/mrdevops_java_app.git"
+            }
             }
         }
     }
