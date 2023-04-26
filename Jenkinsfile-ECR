@@ -84,7 +84,7 @@ pipeline{
             
             }
         }
-        stage('Docker Image Scan: trivy '){
+        stage('Docker Image Scan : trivy '){
             when { expression { params.action == 'create'}}
 
             steps{
@@ -94,7 +94,7 @@ pipeline{
             
             }
         }
-        stage('Docker Image Push: ECR '){
+        stage('Docker Image Push : ECR '){
             when { expression { params.action == 'create'}}
 
             steps{
@@ -104,7 +104,7 @@ pipeline{
             
             }
         }
-        stage('Docker Image Cleanup: ECR '){
+        stage('Docker Image Cleanup : ECR '){
             when { expression { params.action == 'create'}}
 
             steps{
